@@ -6,6 +6,7 @@ package = Service(name='package', path='/package/{package_id}')
 
 
 @package.post()
+@package.get()
 def get_info(request):
     """Returns Hello in JSON."""
     package_id = request.matchdict['package_id']
